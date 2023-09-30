@@ -43,6 +43,52 @@
                 The dog's age
                 The dog's hobbies-->
 
+
+        <ImageView
+            android:id="@+id/gridImage"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="194dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/leroy" />
+
+        <TextView
+            android:id="@+id/gridName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridImage"
+android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"            />
+
+        <TextView
+            android:id="@+id/gridAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridName"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            />
+
+        <TextView
+            android:id="@+id/gridHobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridAge"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
